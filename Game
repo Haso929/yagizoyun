@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head><meta charset="UTF-8"><title>Yağız</title></head>
+<body style="text-align:center; font-family:sans-serif; padding:30px; background:#fafafa;">
+  <h1>✨ One more thing... Yağız!</h1>
+  <p>Taş - Kağıt - Makas</p>
+  <button onclick="o('taş')">✊ Taş</button>
+  <button onclick="o('kağıt')">🖐 Kağıt</button>
+  <button onclick="o('makas')">✌ Makas</button>
+  <h2 id="s"></h2>
+  <div id="f" style="font-size:18px;color:#333;display:none;margin-top:40px;"></div>
+  <script>
+    let t=0;
+    function o(u){
+      const s=['taş','kağıt','makas'];
+      const b=s[Math.floor(Math.random()*3)];
+      let m='Sen:'+u+' Bilgisayar:'+b+' → ';
+      m += u===b? 'Berabere!' :
+           (u==='taş'&&b==='makas'||u==='kağıt'&&b==='taş'||u==='makas'&&b==='kağıt') ? 'Kazandın!' : 'Kaybettin!';
+      document.getElementById('s').innerText=m;
+      if(++t===5){
+        document.getElementById('f').style.display='block';
+        document.getElementById('f').innerHTML=`🎮 Yapımcı: Yağız<br>🕊 Ailem için yazdım.`;
+      }
+    }
+  </script>
+</body>
+</html>
