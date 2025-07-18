@@ -1,0 +1,39 @@
+body {
+  font-family: 'Comic Sans MS', sans-serif;
+  text-align: center;
+  background-color: #f0f8ff;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+}
+
+.game button {
+  font-size: 1.5em;
+  margin: 10px;
+  padding: 15px 30px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.game button:hover {
+  background-color: #2980b9;
+}
+
+#sonuc {
+  font-size: 1.8em;
+  margin-top: 30px;
+  color: #8e44ad;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 1.2em;
+  color: #34495e;
+}
